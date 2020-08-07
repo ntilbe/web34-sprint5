@@ -48,7 +48,7 @@ function createTopicItem(topicName) {
 const topicContainer = document.querySelector(".topics");
 
 axios
-  .get("https://lambda-times-backend.herokuapp.com/topics")
+  .get("https://lambda-times-api.herokuapp.com/topics")
   .then((result) => {
     const topicList = result.data.topics;
     topicList.forEach((topic) => {
